@@ -1,7 +1,9 @@
+/*
+floating
 * {
     box-sizing: border-box;
 }
-
+floating
 .img-container {
     float: left;
     width: 33.3%;
@@ -17,4 +19,100 @@
     content: "";
     clear: both;
     display: table;
+} */
+
+/* 
+position
+.static {
+    position: static;
+    border: 3px solid #73ad21;
+}
+.relative {
+    position: relative;
+    left: 30px;
+    border: 3px solid #73ad21;
+}*/
+/* .fixed { */
+    /* látótérhez igazodik fixen */
+    /* position: fixed; */
+    /* bottom: 0; */
+    /* right: 0; */
+    /* width: 300px; */
+    /* border: 3px solid #73ad21; */
+/* } */
+/* .absolute { */
+    /* első nem statikus szülőhöz igazodik */
+    /* position: absolute; */
+    /* top: 80px; */
+    /* right: 0; */
+    /* width: 200px; */
+    /* height: 100px; */
+    /* border: 3px solid #73ad21; */
+/* } */
+/* div.sticky { */
+    /* position: sticky; */
+    /* top: 0; */
+    /* padding: 5px; */
+    /* background-color: cadetblue; */
+    /* border: 3px solid coral; */
+/* } */
+
+/* mértékegységek ; a vh és vw nem a szülőhöz viszonyit mint a %*/
+/* p {
+    font-size: 16px;
+    line-height: 2em;
+}
+div {
+    font-size: 30px;
+    border: 1px solid black;
+    width: 33vw;
+    height: 20vh;
+}
+span {
+    font-size: 0.5em;
+} */
+
+/* pszeudo elemek  */
+h4 {
+    color: #999999;
+}
+.tgl {
+    display: none;
+}
+.tgl, .tgl:after, .tgl *, .tgl *:after, .tgl + .tgl-btn {
+    box-sizing: border-box;
+}
+.tgl + .tgl-btn {
+    outline: 0;
+    display: block;
+    width: 4em;
+    height: 2em;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+.tgl + .tgl-btn:after {
+    position: relative;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+}
+.tgl + .tgl-btn:after {
+    left: 0;
+}
+.tgl:checked + .tgl-btn::after {
+    left: 50%;
+}
+.tgl-btn {
+    background-color: #f0f0f0;
+    border-radius: 2em;
+    padding: 2px;
+}
+.tgl + .tgl-btn::after {
+    border-radius: 50%;
+    background-color: white;
+}
+.tgl:checked + .tgl-btn {
+    background-color: #9fd6ae;
 }
