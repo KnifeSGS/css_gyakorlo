@@ -73,7 +73,7 @@ span {
 } */
 
 /* pszeudo elemek  */
-h4 {
+/* h4 {
     color: #999999;
 }
 .tgl {
@@ -115,4 +115,101 @@ h4 {
 }
 .tgl:checked + .tgl-btn {
     background-color: #9fd6ae;
+} */
+
+/* display */
+/* .container {
+    text-align: center;
+}
+
+.stars .fa-star {
+    display: inline-block;
+    color: gold;
+    font-size: 2em;
+    text-shadow: 0 0 2px red;
+    width: 2em;
+    line-height: 2em;
+    cursor: pointer;
+} */
+
+/* sarkok */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+html {
+    background: #dbe5ea;
+    height: 100%;
+}
+body {
+    align-items: center;
+    display: flex;
+    font: 1.125em/1.5625 sans-serif;
+    justify-content: center;
+    margin: 0;
+    padding: 1em;
+    min-height: 100%;
+}
+
+.button {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    color: inherit;
+    display: inline-block;
+    font: inherit;
+    height: auto;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+}
+
+.button:focus {
+    outline: none;
+}
+.button-inner {
+    align-items: center;
+    background: #456bd9;
+    border: 2px solid transparent;
+    border-radius: 99em;
+    color: white;
+    display: flex;
+    font-weight: 600;
+    height: 2.5em;
+    min-width: 2.5em;
+    padding: 0 1em;
+    position: relative;
+    width: 100%;
+}
+.button:focus .button-inner {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 2px #456bd9;
+}
+.button:hover .button-inner {
+    filter: brightness(1.1);
+}
+.button:active .button-inner {
+    filter: brightness(0.9);
+}
+
+.badge {
+    align-items: center;
+    background: #ce2c6c;
+    border: 2px solid #fff;
+    border-radius: 99em;
+    display: flex;
+    font-size: 0.7em;
+    font-weight: 600;
+    height: 1.44em;
+    justify-content: center;
+    line-height: 1;
+    min-width: 1.44em;
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    color: white;
 }
