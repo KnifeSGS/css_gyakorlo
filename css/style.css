@@ -133,7 +133,7 @@ span {
 } */
 
 /* sarkok */
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
 }
@@ -212,4 +212,27 @@ body {
     right: -2px;
     top: -2px;
     color: white;
+} */
+
+/* background */
+/* body { */
+    /* margin-right: 200px; */
+    /* background-color: #ffffff; */
+    /* background-image: url("https://www.w3schools.com/css/img_tree.png"); */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* background-position: right top; */
+    /*vagy röviden: background: #fff url("https://www.w3schools.com/css/img_tree.png") no-repeat right top; */
+/* } */
+
+/* színátmenet */
+i {
+    margin-top: 50px;
+}
+
+.icon-blue {
+    background-image: linear-gradient(45deg, #135f4e 0%, #69d3f7 100%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
